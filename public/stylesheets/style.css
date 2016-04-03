@@ -45,13 +45,13 @@ html {
 
 @media (min-width: 500px) {
     .nav-inverse-color {
-        width: 50%;
+        width: 100%;
     }
 }
 
 @media (min-width: 730px) {
     .nav-inverse-color {
-        width: 25%;
+        width: 100%;
     }
 }
 
@@ -409,9 +409,41 @@ a {
 }
 
 #moodBox {
-    padding-bottom: 1em;
+    /*vertical-align: middle;*/
 }
 
 #resultsText {
     height: 6em;
+}
+
+#timeline, #resultsText {
+    color:black;
+}
+
+#timelineDiv {
+    /*position: fixed;*/
+    left: 0;
+    bottom: 0;
+    width: 337.25 px;
+    height: 255 px;
+}
+
+.controlBar {
+    display: inline-block;
+}
+
+#moodBoxCol{
+    margin-top: 22%;
+}
+
+.vertical-center {
+  height: 500px;
+
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
 }
