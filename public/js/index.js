@@ -247,19 +247,19 @@ showMetaData=function(alternative)
 		switch(window.colorPlace)
 		{
 			case 0: //anger
-			$("#moodBox").animate({'margin-top': '-=100'}, {duration: 1000});
+			$("#moodBox").animate({"margin-top": '+=100'}, 1000);
 			console.log(window.colorPlace);
 			break;
 			case 1: //disgust
-			$("#moodBox").animate({"margin-bottom": '-=50'}, 1000);
+			$("#moodBox").animate({"margin-top": '+=50'}, 1000);
 			console.log(window.colorPlace);
 			break;
 			case 2: //fear
-			$("#moodBox").animate({'margin-top': '+=50'}, {duration: 1000});
+			$("#moodBox").animate({"margin-top": '-=200'}, 500);
 			console.log(window.colorPlace);
 			break;
 			case 3: //joy
-			$("#moodBox").animate({"margin-bottom": '+=100'}, 1000);
+			$("#moodBox").animate({"margin-top": '-=100'}, 1000);
 			console.log(window.colorPlace);
 			break;
 			case 4: //sadness
@@ -277,19 +277,19 @@ showMetaData=function(alternative)
 		switch(window.colorPlace)
 		{
 			case 0: //anger
-			$("#moodBox").animate({"margin-bottom": '+=100'}, 1000);
+			$("#moodBox").animate({"margin-top": '-=100'}, 1000);
 			console.log(window.colorPlace);
 			break;
 			case 1: //disgust
-			$("#moodBox").animate({"margin-bottom": '+=50'}, 1000);
+			$("#moodBox").animate({"margin-top": '-=50'}, 1000);
 			console.log(window.colorPlace);
 			break;
 			case 2: //fear
-			$("#moodBox").animate({"margin-bottom": '-=200'}, 500);
+			$("#moodBox").animate({"margin-top": '+=200'}, 500);
 			console.log(window.colorPlace);
 			break;
 			case 3: //joy
-			$("#moodBox").animate({"margin-bottom": '-=100'}, 1000);
+			$("#moodBox").animate({"margin-top": '+=100'}, 1000);
 			console.log(window.colorPlace);
 			break;
 			case 4: //sadness
