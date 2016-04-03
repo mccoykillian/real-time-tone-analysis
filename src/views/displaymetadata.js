@@ -157,6 +157,7 @@ exports.showResult = function(msg, baseString, model) {
     text = text.replace(/(.)\1{2,}/g, '');
     if (msg.results[0].final)
        console.log('-> ' + text);
+
     text = text.replace(/D_[^\s]+/g,'');
 
     // if all words are mapped to nothing then there is nothing else to do

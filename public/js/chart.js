@@ -10,7 +10,7 @@
         EMOTION_TONES = ['anger', 'disgust', 'fear', 'joy', 'sadness'],
         WRITING_TONES = ['analytical', 'confident', 'tentative'],
         SOCIAL_TONES = ['openness_big5', 'conscientiousness_big5', 'extraversion_big5', 'agreeableness_big5', 'neuroticism_big5'],
-        TIMELINES_STYLES = [[221, 65, 49], [1, 79, 131], [123, 194, 83], [249, 223, 60], [144, 167, 207]];
+        TIMELINES_STYLES = [[221, 65, 49], [123, 194, 83], [152, 125, 212], [249, 223, 60], [144, 167, 207]];
 
     // TODO: Replace with jquery version
     var Util = {

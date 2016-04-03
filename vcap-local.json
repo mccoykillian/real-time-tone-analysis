@@ -7,8 +7,8 @@
         "plan": "standard",
         "credentials": {
           "url": "https://stream.watsonplatform.net/speech-to-text/api",
-          "username": "USERNAME",
-          "password": "PASSWORD"
+          "password": "BA7QMUfVnZAR",
+          "username": "41dd178a-2a0e-42cc-9c50-7b7d9a4f2847"
         }
       }
     ],
@@ -19,11 +19,10 @@
         "plan": "beta",
         "credentials": {
           "url": "https://gateway.watsonplatform.net/tone-analyzer-beta/api",
-          "isStreaming": false,
-          "username": "USERNAME",
-          "password": "PASSWORD"
+          "password": "SxDOMWML1wXi",
+          "username": "87c97b95-2ac2-45f9-92f7-544f50a97ea3"
         }
       }
-    ]
+      ]
   }
 }

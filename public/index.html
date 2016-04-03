@@ -14,15 +14,6 @@
 </head>
 
 <body class="real-time-body">
-    <div class="top">
-        <div class="bar">
-            <a href="https://realtime-tone.mybluemix.net">
-                <div class="title">
-                    <div class="name">REAL TIME TONE ANALYSIS</div>
-                </div>
-            </a>
-        </div>
-    </div>
 
     <div id="container" class="container">
         <div class="row body-row">
@@ -64,18 +55,6 @@
                             <img id="microphoneIcon" src="images/microphone.svg" class="icon">
                             <span class="nav-label">Record Audio</span>
                         </li>
-                        <li class="play-sample-1 button-row nav-inverse-color">
-                            <img src="images/play.svg" class="icon">
-                            <span class="nav-label">Play Sample 1</span>
-                        </li>
-                        <li class="play-sample-2 button-row nav-inverse-color">
-                            <img src="images/play.svg" class="icon">
-                            <span class="nav-label">Play Sample 2</span>
-                        </li>
-                        <li class="save-results button-row nav-inverse-color"  data-toggle="modal" data-target="#myModal" onclick = "prepareDataForSave()">
-                            <img src="images/save.svg" class="icon">
-                            <span class="nav-label">Save Results</span>
-                        </li>
                     </ul>
                 </nav>
             </div>
@@ -85,11 +64,6 @@
                     <div class="well">
                         <form autocomplete="off" class="form-horizontal">
                             <div role="tabpanel">
-                                <!-- Nav tabs -->
-                                <ul class="nav nav-tabs" role="tablist">
-                                    <li role="presentation" class="active"><a href="#home2" aria-controls="home" role="tab" data-toggle="tab">Text</a></li>
-                                    <li role="presentation"><a href="#profile2" aria-controls="profile" role="tab" data-toggle="tab">JSON</a></li>
-                                </ul>
                                 <div class="hr-tab"></div>
                                 <fieldset>
                                     <div class="row error-row">
@@ -115,9 +89,6 @@
                                                 <div role="tabpanel" class="tab-pane active" id="home2">
                                                     <textarea readonly id="resultsText" dir="auto"></textarea>
                                                 </div>
-                                                <div role="tabpanel" class="tab-pane" id="profile2">
-                                                    <textarea readonly id="resultsJSON"></textarea>
-                                                </div>
                                             </div>
                                         </div>
                                         <!-- .col-lg-12 -->
@@ -131,66 +102,19 @@
             </div>
             <!-- /.tabpanel -->
 
-            <div class="row">
+            <div id="moodBox" class="center-block" style="height:100px; width: 100px;"></div>
+
+
+            <!-- <div class="row"> -->
                 <div id="timeline" class="col-md-12">
                     <!-- smoothie chart -->
 
                 </div>
-            </div>
+            <!-- </div> -->
             <!-- row -->
 
 
-            <div class="row">
-                <div class="col-md-12">
-
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3>Metadata</h3>
-                            <span class="pull-right clickable"><i class="caret-up" style="  margin-top: -1.3em;"></i></span>
-                        </div>
-                        <div class="panel-body">
-
-                            <!-- Table -->
-                            <div class="table-scroll">
-                                <table id="metadataTable">
-                                    <thead>
-                                        <tr class="table-header-row">
-                                            <th>WORD</th>
-                                            <th>START TIME(sec)</th>
-                                            <th>END TIME(sec)</th>
-                                            <th>CONFIDENCE</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="metadataTableBody">
-                                    </tbody>
-                                </table>
-                            </div>
-
-                            <!-- END Table -->
-                            <div class="alt-hypothesis">
-                                <h5>Alternate Hypotheses</h5>
-                                <hr>
-                                <div class="hypotheses">
-                                    <ol></ol>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Spacer-->
-                    <!-- TODO: Move this to CSS-->
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12">
-                            <br>
-                            <br>
-                        </div>
-                    </div>
-
-
-                </div>
-                <!-- /.col -->
-            </div>
-            <!-- /.row -->
+            
 
         </div>
         <!-- row -->
@@ -235,23 +159,6 @@
     <!-- /.container -->
 
     <!--    <div class="site"></div>-->
-
-    <!-- Footer Div-->
-    <div class="footer">
-        <div class="footer-container">
-            <div>
-                <img class="footerImage" src="images/watson-logo.png">
-            </div>
-            <div class="baseline">
-                <span>Built on <a href="http://ibm.biz/realtime-tone-bluemix" target="_blank">IBM Bluemix</a></span>
-                <span>Compatible with <a href="https://www.google.com/intl/en/chrome/browser/desktop/" target="_blank">Google Chrome</a> and <a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank">Mozilla Firefox</a></span>
-            </div>
-            <div>
-                <img class="footerImage" src="images/bluemix-logo.png">
-            </div>
-        </div>
-    </div>
-    <!-- /.footer -->
 
     <!-- Place js files at the end of the document, with fallbacks for CDNs -->
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>

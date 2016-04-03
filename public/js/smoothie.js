@@ -494,13 +494,22 @@
         // Calculate the current scale of the chart, from all time series.
         var chartOptions = this.options,
             chartMaxValue = Number.NaN,
-            chartMinValue = Number.NaN;
+            chartMinValue = Number.NaN,
+            greatestEmotionValue = 0,
+            greatestEmotionColor= [[221, 65, 49], [123, 194, 83], [152, 125, 212], [249, 223, 60], [144, 167, 207]];
+
+            colorPlace = 2;
 
         for (var d = 0; d < this.seriesSet.length; d++) {
             // TODO(ndunn): We could calculate / track these values as they stream in.
             var timeSeries = this.seriesSet[d].timeSeries;
             if (!isNaN(timeSeries.maxValue)) {
                 chartMaxValue = !isNaN(chartMaxValue) ? Math.max(chartMaxValue, timeSeries.maxValue) : timeSeries.maxValue;
+                if (chartMaxValue > greatestEmotionValue){
+                  greatestEmotionValue = chartMaxValue;
+                  colorPlace = d;
+                }
+
             }
 
             if (!isNaN(timeSeries.minValue)) {
@@ -545,6 +554,9 @@
             min: chartMinValue,
             max: chartMaxValue
         };
+
+        document.getElementById("moodBox").style.backgroundColor = 'rgb(' + greatestEmotionColor[colorPlace] + ')';
+
     };
 
     SmoothieChart.prototype.render = function (canvas, time) {
