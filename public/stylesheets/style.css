@@ -408,3 +408,10 @@ a {
     margin-left: 5px;
 }
 
+#moodBox {
+    padding-bottom: 1em;
+}
+
+#resultsText {
+    height: 6em;
+}
